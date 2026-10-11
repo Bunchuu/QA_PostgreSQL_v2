@@ -1,0 +1,19 @@
+# Virtual environment
+.venv/
+venv/
+
+# Pythona / pytesta cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# MacOS system files
+.DS_Store
+
+# Logs
+*.log
+
+# Docker / Postgres local data
+pgdata/
+.env
