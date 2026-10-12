@@ -47,7 +47,7 @@ jobs:
       - name: Seed database schema
         run: |
           sudo apt-get update && sudo apt-get install -y postgresql-client
-          PGPASSWORD=bunchuu psql -h localhost -U bunchuu -d bunchuu_db -f init_db.sql
+          PGPASSWORD=bunchuu psql -h localhost -U bunchuu -d bunchuu_db -f sql/init_db.sql
 
       - name: Run Pytest suite
         run: |
