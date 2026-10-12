@@ -1,0 +1,16 @@
+# Docker Compose configuration for PostgreSQL db
+services:
+  postgres-db:
+    image: postgres:16-alpine
+    container_name: qa_postgres_container_v2
+    environment:
+      POSTGRES_DB: bunchuu_db
+      POSTGRES_USER: bunchuu
+      POSTGRES_PASSWORD: bunchuu
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata_v2:/var/lib/postgresql/data
+
+volumes:
+  pgdata_v2:
